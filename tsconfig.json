@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/ui/dashboard/rightbar"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/ui/dashboard/rightbar", "src/app/dashboard/users/page.jsx", "src/app/dashboard/layout.jsx", "src/app/dashboard/users/add/page.jsx", "src/app/dashboard/page.jsx", "src/app/login/page.jsx", "src/app/ui/dashboard/cards/card1.jsx", "src/app/ui/dashboard/cards/card2.jsx", "src/app/ui/dashboard/cards/card3.jsx", "src/app/ui/dashboard/datasummary/datasummary.jsx", "src/app/ui/dashboard/footer/footer.jsx", "src/app/ui/dashboard/navbar/navbar.jsx", "src/app/ui/dashboard/pagination/pagination.jsx", "src/app/ui/dashboard/search/search.jsx", "src/app/ui/dashboard/sidebar/menuLink/menuLink.jsx", "src/app/ui/dashboard/sidebar/sidebar.jsx", "src/app/layout.jsx", "src/app/page.jsx"],
   "exclude": ["node_modules"]
 }

@@ -4,7 +4,7 @@ import styles from "./menuLink.module.css"
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-const MenuLink = ({item}: any) => {
+const MenuLink = ({item}) => {
     const pathname = usePathname()
     console.log(pathname)
   return (

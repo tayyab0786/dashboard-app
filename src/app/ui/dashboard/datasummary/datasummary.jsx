@@ -1,17 +1,18 @@
 import Image from "next/image";
-import styles from "./transactions.module.css";
+import styles from "./datasummary.module.css";
 
-const Transactions = () => {
+const DataSummary = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Latest Transactions</h2>
       <table className={styles.table}>
         <thead>
           <tr>
-            <td>Name</td>
-            <td>Status</td>
-            <td>Date</td>
-            <td>Amount</td>
+            <td>Image</td>
+            <td>Farm Name</td>
+            <td>Farm Address</td>
+            <td>Farmer Name</td>
+            <td>Added At</td>
+            
           </tr>
         </thead>
         <tbody>
@@ -25,16 +26,14 @@ const Transactions = () => {
                   height={40}
                   className={styles.userImage}
                 />
-                Tayyab Waqar
               </div>
             </td>
-            <td>
-              <span className={`${styles.status} ${styles.pending}`}>
-                Pending
-              </span>
-            </td>
-            <td>14.02.2023</td>
-            <td>PKR 3.200</td>
+            <td>Haji Javed Jamil Dairy Farm</td>
+            <td>Bin Qasim Town</td>
+            <td>Khalid Qureshi</td>
+            <td>2023-08-31</td>
+            <button className={styles.button}>Manage</button>
+            
           </tr>
           <tr>
             <td>
@@ -46,14 +45,12 @@ const Transactions = () => {
                   height={40}
                   className={styles.userImage}
                 />
-                Khurram Qureshi
               </div>
             </td>
-            <td>
-              <span className={`${styles.status} ${styles.done}`}>Done</span>
-            </td>
-            <td>14.02.2023</td>
-            <td>PKR 3.500</td>
+            <td>...</td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <td>
@@ -65,16 +62,12 @@ const Transactions = () => {
                   height={40}
                   className={styles.userImage}
                 />
-                Shahid Alam
               </div>
             </td>
-            <td>
-              <span className={`${styles.status} ${styles.cancelled}`}>
-                Cancelled
-              </span>
-            </td>
-            <td>14.02.2023</td>
-            <td>PKR 2.800</td>
+            <td>...</td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <td>
@@ -86,21 +79,18 @@ const Transactions = () => {
                   height={40}
                   className={styles.userImage}
                 />
-                Muneeb Ahmed
               </div>
             </td>
-            <td>
-              <span className={`${styles.status} ${styles.pending}`}>
-                Pending
-              </span>
-            </td>
-            <td>14.02.2023</td>
-            <td>PKR 4.000</td>
+            <td>...</td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
         </tbody>
       </table>
+      
     </div>
   );
 };
 
-export default Transactions;
+export default DataSummary;
